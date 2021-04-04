@@ -1,0 +1,209 @@
+/* Navbar brand*/
+.navbar {
+    position: relative;
+    z-index: 1;
+    position: fixed;
+    
+}
+
+.navbar-brand, .navbar-link {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 7);
+}
+
+.navbar-brand {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 32px;
+}
+
+/* Utility yang disainnya sama */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #1492E6;
+        margin: auto;
+        margin-bottom: -3px;
+        width: 50%;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+    }
+
+    .workbusiness h3{
+        text-align: left;
+    }
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(images/jumbotron.png);
+    background-size: cover;
+    height: 640px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+/* gradasi jumbotron */
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4{
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+    margin-top: 150px;
+    font-weight: 50;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 7);
+    font-size: 62px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span{
+    font-weight: 800;
+}
+
+
+/* INFO DETAIL */
+.info-detail {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -105px;
+    padding: 30px;
+}
+
+.info-detail img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-detail h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2799E5;
+}
+
+.info-detail p {
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/* Work Business */
+.workbusiness {
+    margin-top: 120px;
+    text-align: left;
+}
+.workbusiness h3 {
+    font-family: 'Convergence', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.workbusiness h3 span{
+    font-weight: 500;
+    color: #2799E5;
+}
+.workbusiness p{
+    margin: 30px;
+    margin-left: 0px;
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 18px;
+    color: #ACACAC;
+    font-weight: 100;
+}
+
+/* Ulasan */
+.ulasan h4 {
+    font-family: 'Patrick Hand', cursive;
+    margin-top: 120px;
+    font-size: 26px;
+    text-align: center;
+}
+.ulasan .figure {
+    text-align: center;
+    margin-left: 25px;
+}
+.ulasan .figure figcaption {
+    margin-top: -8px;
+    font-size: 12px;
+}
+
+
+.playlist {
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+}
+
+.playlist img {
+    width: 250px;
+}
+
+
+.news {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 16px;
+    margin-bottom: 75px;
+
+}
+
+.news img {
+    width: 250px;
+}
+
+.nasa {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 16px;
+    margin-bottom: 75px;
+
+}
+
+.nasa img {
+    width: 250px;
+}
+
+
+/* FOOTER */
+.footer {
+    margin-top: 100px;
+}
+.footer p {
+    margin-top: 10px;
+}
